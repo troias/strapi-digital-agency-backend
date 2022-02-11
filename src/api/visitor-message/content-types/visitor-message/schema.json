@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "visitor_messages",
+  "info": {
+    "singularName": "visitor-message",
+    "pluralName": "visitor-messages",
+    "displayName": "visitor message"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "project_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project-category.project-category"
+    }
+  }
+}
