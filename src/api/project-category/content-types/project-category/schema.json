@@ -33,6 +33,10 @@
       "relation": "manyToMany",
       "target": "api::project.project",
       "inversedBy": "project_categories"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
