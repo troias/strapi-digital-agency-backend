@@ -37,6 +37,12 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "visitor_messages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::visitor-message.visitor-message",
+      "mappedBy": "project_categories"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "visitor-message",
     "pluralName": "visitor-messages",
-    "displayName": "visitor message"
+    "displayName": "visitor message",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,10 +21,14 @@
     "body": {
       "type": "richtext"
     },
-    "project_category": {
+    "project_categories": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::project-category.project-category"
+      "relation": "manyToMany",
+      "target": "api::project-category.project-category",
+      "inversedBy": "visitor_messages"
+    },
+    "company": {
+      "type": "string"
     }
   }
 }
