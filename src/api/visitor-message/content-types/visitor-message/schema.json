@@ -29,6 +29,12 @@
     },
     "company": {
       "type": "string"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::service.service",
+      "inversedBy": "visitor_messages"
     }
   }
 }

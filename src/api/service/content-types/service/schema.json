@@ -36,6 +36,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::project-category.project-category"
+    },
+    "visitor_messages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::visitor-message.visitor-message",
+      "inversedBy": "services"
     }
   }
 }
